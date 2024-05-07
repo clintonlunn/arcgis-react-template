@@ -5,3 +5,13 @@
 :root {
   color-scheme: dark;
 }
+
+@layer components {
+  .bg-dotted {
+    background-size: 16px 16px;
+    background-color: darkgray;
+    background-image: radial-gradient(circle,
+        var(--calcite-ui-border-3) 1px,
+        transparent 1px);
+  }
+}

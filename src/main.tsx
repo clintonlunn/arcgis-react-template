@@ -7,6 +7,7 @@ import '@arcgis/core/assets/esri/themes/dark/main.css';
 
 // Import the Calcite Components loader
 import { defineCustomElements } from '@esri/calcite-components/dist/loader';
+import { MapProvider } from './contexts/MapProvider';
 defineCustomElements(window);
 
 // Create a root element to render the app into
@@ -18,6 +19,8 @@ const root = ReactDOM.createRoot(
 root.render(
   // Using StrictMode is heavily recommended, only disable if you know what you're doing
   <React.StrictMode>
-    <App />
+    <MapProvider>
+      <App />
+    </MapProvider>
   </React.StrictMode>
 );
