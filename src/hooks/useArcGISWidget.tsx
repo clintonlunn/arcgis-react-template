@@ -24,6 +24,8 @@ function useArcGISWidget(widgets: ArcGISWidgetProps[]) {
                 });
 
                 widgetInstances.current.set(WrappedWidget, widget);
+
+                // if a container is specified, don't add the widget to the view's UI because it will be added to the container
                 if (!container) {
                     view.ui.add(widget, position);
                 }

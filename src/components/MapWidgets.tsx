@@ -12,7 +12,7 @@ const MapWidgets: React.FC = () => {
         { WrappedWidget: BasemapToggle, position: 'bottom-right', config: { secondBasemap: 'satellite' } },
         { WrappedWidget: Locate, position: 'top-left' },
         { WrappedWidget: Legend, position: 'top-left' },
-        // { WrappedWidget: Search, container: 'searchDiv' }
+        { WrappedWidget: Search, container: 'searchDiv' }
         // { WrappedWidget: Search, position: 'top-right' }
     ]);
 
