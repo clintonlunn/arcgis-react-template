@@ -19,6 +19,11 @@ Quickly set up a new project using React + ArcGIS Maps SDK! This template comes 
 
 ## Get Started
 
+```
+npm install
+npm run dev
+```
+
 
 
 ### GitHub Template
