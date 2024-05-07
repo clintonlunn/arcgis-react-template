@@ -1,5 +1,5 @@
 import { CalciteAction } from '@esri/calcite-components-react';
-import { useCallback, useMemo, useState } from 'react';
+import React, { useCallback, useMemo, useState } from 'react';
 
 export type ActionItem = {
   name: string;
